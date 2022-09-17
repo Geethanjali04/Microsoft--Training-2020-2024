@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) { 
+    Scanner scanner=new Scanner(System.in);
+    int num1=scanner.nextInt();
+    int num2=scanner.nextInt(); 
+    int lcm=(num1>num2)?num1:num2; 
+    for(int i=lcm;i<num1*num2;i+=lcm)
+      { 
+        if(lcm%num1==0 && lcm%num2==0)
+        {
+          System.out.print(lcm); 
+          break;
+        }
+      }
+    
+  }
+}
