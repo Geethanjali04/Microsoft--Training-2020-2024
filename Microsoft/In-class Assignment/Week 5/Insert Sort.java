@@ -1,4 +1,4 @@
-class Solution {
+classic Solution {
     public int[] sortArray(int[] nums) {
          
       //  insert sort
@@ -22,7 +22,10 @@ class Solution {
                 if(nums[j-1]>nums[j])
                 {
                     swap(j,j-1,nums);
-                }
+                } 
+                else{
+                break; 
+}
             }
         } 
     }
